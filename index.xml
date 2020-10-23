@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Art&#39;s Web Page</title>
-    <link>akbarnes.github.io/</link>
+    <link>/</link>
     <description>Recent content on Art&#39;s Web Page</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 21 Oct 2020 12:28:32 -0600</lastBuildDate>
     
-	<atom:link href="akbarnes.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Catio</title>
-      <link>akbarnes.github.io/catio/</link>
+      <link>/catio/</link>
       <pubDate>Wed, 21 Oct 2020 12:28:32 -0600</pubDate>
       
-      <guid>akbarnes.github.io/catio/</guid>
+      <guid>/catio/</guid>
       <description>I live in the western USA where coyote predation of pets is common. I decided to build a catio for my wandering cat after the following occured:
  I saw coyotes prowling outside the fence three times in the span of a few months My cat snuck out the pet door when we had left on travel one Christmas and went AWOL for two weeks. We found him in the neighors yard having lost about 5 pounds.</description>
     </item>
     
     <item>
       <title>Calculators</title>
-      <link>akbarnes.github.io/calculators/</link>
+      <link>/calculators/</link>
       <pubDate>Tue, 20 Oct 2020 21:49:39 -0600</pubDate>
       
-      <guid>akbarnes.github.io/calculators/</guid>
+      <guid>/calculators/</guid>
       <description>I&amp;rsquo;ve built up a collection of calculators over the last few years after getting a HP 35s for the FE and re-discovering calculators as a distraction free study aid. Nothing wrong with collecting stuff, we all do it at one point in our lives and calculators are compact and relatively cheap. Here&amp;rsquo;s my current stable, roughly in order of aquisition:
  HP 35s TI 36x Pro Casio 991EX ClassWiz (sold) HP Prime HP 12C Platinum 2nd gen HP 10bii+ HP 17bii TI baii plus SwissMicros DM42  HP 35s I bought this for the FE.</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>akbarnes.github.io/page/about/</link>
+      <link>/page/about/</link>
       <pubDate>Fri, 03 Apr 2015 02:13:50 +0000</pubDate>
       
-      <guid>akbarnes.github.io/page/about/</guid>
+      <guid>/page/about/</guid>
       <description>About Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec dolor in magna lobortis egestas. Suspendisse eu erat tempor, tristique neque eu, convallis nulla. Curabitur vel bibendum lacus, at semper mauris. Suspendisse aliquet commodo ex, sed sagittis metus aliquam id. Maecenas feugiat rutrum lorem vel imperdiet. Nullam ornare lectus ut enim finibus, et porttitor mi tincidunt. Aenean lacinia, leo quis vehicula eleifend, quam libero sagittis erat, at euismod augue mauris et sapien.</description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>akbarnes.github.io/page/contact/</link>
+      <link>/page/contact/</link>
       <pubDate>Fri, 03 Apr 2015 02:13:50 +0000</pubDate>
       
-      <guid>akbarnes.github.io/page/contact/</guid>
+      <guid>/page/contact/</guid>
       <description>Contact Aenean ipsum justo, semper eu nisl ut, pretium tincidunt sem. Praesent et diam sit amet lacus lobortis dictum a id lacus. Quisque hendrerit sit amet turpis eu varius. Ut id lorem ac felis ultrices tincidunt. Pellentesque consequat arcu ac fringilla imperdiet. Phasellus pellentesque, sapien non pulvinar blandit, sapien ante aliquet felis, vel porttitor sapien ante in lacus. Fusce non urna aliquet, malesuada nibh vel, luctus urna. Phasellus ut lacus molestie, varius purus quis, malesuada lorem.</description>
     </item>
     
