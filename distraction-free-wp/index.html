@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Distraction-Free Word Processor &middot; </title>
+        <meta name="description" content="First Prototype After seeing ads for the FreeWrite and going so far as to buy an AlphaSmart Neo2, I decided that this a problem spaced under-served by Linux. Sure, there is the E-Ink DIY one driven by a Pi, but it&rsquo;s not really practical: https://hackaday.com/2018/10/20/e-ink-typewriter-is-refreshingly-slow/. This project is about making a Linux software solution based on more conventional hardware and making use of kiosk tools for Linux. This also lets me satisfy other itches, like adding calculator functionality via SageMath or circuit simulator functionality via Falstad.">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.65.3" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Distraction-Free Word Processor">
+<meta property="og:description" content="First Prototype After seeing ads for the FreeWrite and going so far as to buy an AlphaSmart Neo2, I decided that this a problem spaced under-served by Linux. Sure, there is the E-Ink DIY one driven by a Pi, but it&rsquo;s not really practical: https://hackaday.com/2018/10/20/e-ink-typewriter-is-refreshingly-slow/. This project is about making a Linux software solution based on more conventional hardware and making use of kiosk tools for Linux. This also lets me satisfy other itches, like adding calculator functionality via SageMath or circuit simulator functionality via Falstad.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/distraction-free-wp/">
+        <link rel="stylesheet" href="/dist/site.css">
+        <link rel="stylesheet" href="/dist/syntax.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+        
+        
+        
+
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a href="/">Art&#39;s Web Page</a>
+                            </h1>
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" aria-label="Twitter" href="https://twitter.com/XXX" rel="me" >
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" aria-label="Github" href="https://github.com/XXX" rel="me">
+                                <i class="fa fa-github-alt" aria-hidden="true"></i>
+                            </a>
+                        
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Email" aria-label="Send an Email" href="mailto:XXX@example.com">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Distraction-Free Word Processor</h1>
+    
+    <p class="post-date post-line">
+        <span>Published <time datetime="2020-10-22" itemprop="datePublished">Thu, Oct 22, 2020</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="#" itemprop="url" rel="author"></a>
+            </span>
+        </span>
+    </p>
+    
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    <h1 id="first-prototype">First Prototype</h1>
+<p>After seeing ads for the FreeWrite and going so far as to buy an
+AlphaSmart Neo2, I decided that this a problem spaced under-served by
+Linux. Sure, there is the E-Ink DIY one driven by a Pi, but it&rsquo;s not
+really practical:
+<a href="https://hackaday.com/2018/10/20/e-ink-typewriter-is-refreshingly-slow/">https://hackaday.com/2018/10/20/e-ink-typewriter-is-refreshingly-slow/</a>.
+This project is about making a Linux software solution based on more
+conventional hardware and making use of kiosk tools for Linux. This
+also lets me satisfy other itches, like adding calculator
+functionality via SageMath or circuit simulator functionality via
+Falstad.</p>
+<p>Currently the project is based on an i3 Intel NUC running Xubuntu +
+FocusWriter. I have a couple of decisions to make:</p>
+<ol>
+<li>Should I stick with Intel, go to ARM or stay processor-agnostic?</li>
+<li>Should I use native fullscreen applications or web-based ones
+running in FIrefox in kiosk mode?</li>
+<li>How to Sync? Should I support cloud/network storage, USB drives or
+adding hardware to emulate a keyboard like the AlphaSmart?</li>
+</ol>
+<p>Currently (1) doesn&rsquo;t seem to be too important. There are pros and
+cons either way. Staying on Intel means better availability of
+pre-prackaged software and the ability to use the majority of
+Chromebooks. Going to ARM means the ability to use Pis, Pi0&rsquo;s and
+PineBooks, and is probably a better choice for a hacker project. A
+cyberdeck version would be pretty sweet.</p>
+<p>With (2) the majority of writing applications are written natively so
+I haven&rsquo;t found any self-hosted browser-based solutions for writing
+other than <a href="https://github.com/writeas/writefreely">https://github.com/writeas/writefreely</a>. However, a Firefox
+kiosk-based solution means a couple other benefits: I can limit
+internet access by whitelisting sites rather than removing or
+disabling networking hardware. This means that I&rsquo;m not limited to
+self-hosted solutions and can use ones that are fully or partly
+cloud-based like <a href="https://www.calmlywriter.com/">https://www.calmlywriter.com/</a>. This also makes it
+easy to add local web-based capabilities like SageMath/Falstad, or
+other cloud-based ones like Cocalc/Repl.it/Overleaf. Honestly, having
+calculator functionality is more interesting to me than just a writing
+tool (I&rsquo;m an engineer and frankly not much of a writer).</p>
+<p>With (3) supporting cloud/network storage is easiest from the
+user-interface perspective. Using USB drives means the need to give
+the user access into the filesystem, complicating UI. And much as I
+like my AlphaSmart, emulating a keyboard is a slow unreliable and
+pretty rubbish way of transferring data.</p>
+<h1 id="notes-software">Notes Software</h1>
+<p>After a bit of research, there really isn&rsquo;t much in the way of
+distraction-free writing apps that work in a browser. The most popular
+(Typora, commercial and FocusWriter, FOSS) are native. Probably this
+is an entirely reasonable thing. Currently I&rsquo;m looking at notes apps.
+Standard Notes seems nicest, but it&rsquo;s a bit of a pain to get running.
+Reasonable alternatives are Trillium, Wiki.js, BookStack, WriteFreely
+and the various NextCloud notes add-ons.</p>
+<h1 id="tiling-window-managers">Tiling Window Managers</h1>
+<p>I&rsquo;ve flip-flopped again on the software design, and decided to go for
+a more hacker-ey approach that uses a tiling window manager + terminal
+window instead of a browser in kiosk mode. I&rsquo;m using the following
+software:</p>
+<pre><code>Xubuntu 18.04
+Xmonad window manager
+XFCE4 terminal
+Vim/Nano text editors
+Feh image browser
+Zathura PDF viewer
+W3M browser
+Ranger/NNN file managers
+HTOP system viewer
+NCDU disk space viewer
+</code></pre>
+<p>I discovered it&rsquo;s pretty easy to hack together a menu-based interface
+with  Fish shell script, though it&rsquo;s a bit janky. Better options are
+wiretail (easier, more portable)/dialog (more verbose, more flexible)
+which allow for decent-looking GUIs in shell scripts.</p>
+<p>Off-topic, I also learned about Zenity which is the GTK equivalent. It
+has Python bindings and seems like a nicer alternative to PyQT (pretty
+but tedious to code up) and PySimpleGUI (fast to code but hideous as
+the library tries to look like a 90s WinForms enterprise app).</p>
+
+</div>
+
+        <footer class="post-footer clearfix"><div class="share">
+            <a class="icon-twitter" href="https://twitter.com/share?text=Distraction-Free%20Word%20Processor&url=%2fdistraction-free-wp%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" aria-label="Share on Twitter">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+    </div>
+</footer>
+
+        
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a href="/">Art&#39;s Web Page</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#" aria-label="Back to Top">
+                        <i class="fa fa-angle-up" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2020 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="/js/jquery-1.11.3.min.js"></script>
+        <script src="/js/jquery.fitvids.js"></script>
+        <script src="/js/scripts.js"></script>
+    </body>
+</html>
+

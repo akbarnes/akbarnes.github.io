@@ -5,10 +5,19 @@
     <link>/</link>
     <description>Recent content on Art&#39;s Web Page</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 21 Oct 2020 12:28:32 -0600</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2020 08:37:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Distraction-Free Word Processor</title>
+      <link>/distraction-free-wp/</link>
+      <pubDate>Thu, 22 Oct 2020 08:37:00 +0000</pubDate>
+      
+      <guid>/distraction-free-wp/</guid>
+      <description>First Prototype After seeing ads for the FreeWrite and going so far as to buy an AlphaSmart Neo2, I decided that this a problem spaced under-served by Linux. Sure, there is the E-Ink DIY one driven by a Pi, but it&amp;rsquo;s not really practical: https://hackaday.com/2018/10/20/e-ink-typewriter-is-refreshingly-slow/. This project is about making a Linux software solution based on more conventional hardware and making use of kiosk tools for Linux. This also lets me satisfy other itches, like adding calculator functionality via SageMath or circuit simulator functionality via Falstad.</description>
+    </item>
     
     <item>
       <title>Catio</title>
