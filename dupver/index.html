@@ -3,19 +3,17 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Catio &middot; </title>
-        <meta name="description" content="I live in the western USA where coyote predation of pets is common. I decided to build a catio for my wandering cat after the following occured:
- I saw coyotes prowling outside the fence three times in the span of a few months My cat snuck out the pet door when we had left on travel one Christmas and went AWOL for two weeks. We found him in the neighors yard having lost about 5 pounds.">
+        <title>Deduplicating Binary Version Control with DupVer &middot; </title>
+        <meta name="description" content="I deal a lot with large-ish binary file in my work. Typically these are single-file database in the style of Sqlite3. These aren&rsquo;t ideal for putting in Git. Git doesn&rsquo;t scale well to large repository sizes. People always seem to try framing this as not a limitation, but it is. I&rsquo;ve taken to using Boar, Restic and finally the Duplicacy deduplicating backup software packages. I think at some point someone had mentioned that it would be awesome to have something like Git but that replaces the packfile format with deduplicating storage.">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
         <meta name="generator" content="Hugo 0.65.3" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:title" content="Catio">
-<meta property="og:description" content="I live in the western USA where coyote predation of pets is common. I decided to build a catio for my wandering cat after the following occured:
- I saw coyotes prowling outside the fence three times in the span of a few months My cat snuck out the pet door when we had left on travel one Christmas and went AWOL for two weeks. We found him in the neighors yard having lost about 5 pounds.">
+        <meta property="og:title" content="Deduplicating Binary Version Control with DupVer">
+<meta property="og:description" content="I deal a lot with large-ish binary file in my work. Typically these are single-file database in the style of Sqlite3. These aren&rsquo;t ideal for putting in Git. Git doesn&rsquo;t scale well to large repository sizes. People always seem to try framing this as not a limitation, but it is. I&rsquo;ve taken to using Boar, Restic and finally the Duplicacy deduplicating backup software packages. I think at some point someone had mentioned that it would be awesome to have something like Git but that replaces the packfile format with deduplicating storage.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="/catio/">
+<meta property="og:url" content="/dupver/">
         <link rel="stylesheet" href="/dist/site.css">
         <link rel="stylesheet" href="/dist/syntax.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
@@ -74,10 +72,10 @@
 <div class="container">
     <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
         <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Catio</h1>
+    <h1 class="post-title" itemprop="name headline">Deduplicating Binary Version Control with DupVer</h1>
     
     <p class="post-date post-line">
-        <span>Published <time datetime="2020-10-21" itemprop="datePublished">Wed, Oct 21, 2020</time></span>
+        <span>Published <time datetime="2020-10-24" itemprop="datePublished">Sat, Oct 24, 2020</time></span>
         <span>by</span>
         <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
             <span itemprop="name">
@@ -91,30 +89,36 @@
         <div class="post-content clearfix" itemprop="articleBody">
     
 
-    <p>I live in the western USA where coyote predation of pets is common.
-I decided to build a catio for my wandering cat after the following occured:</p>
-<ol>
-<li>I saw coyotes prowling outside the fence three times in the span of a few months</li>
-<li>My cat snuck out the pet door when we had left on travel one Christmas
-and went AWOL for two weeks. We found him in the neighors yard having
-lost about 5 pounds.</li>
-<li>A number of unauthorized &ldquo;snacks&rdquo; obtained by jumping the fence
-into the neighbors yard via a low-hanging apricot tree branch and hiding
-behind a flowering plant to wait for unsuspecting birds to come.</li>
-</ol>
-<p>The catio is based on the <a href="https://www.tractorsupply.com/tsc/product/cumberland-cottage-coop-dus200120-dus200120">&ldquo;Cumberland Cottage&rdquo;</a> chicken coop from tractor supply.
-Modifying it was pretty straightforward and consisted of</p>
-<ol>
-<li>Adding some 1x4&rsquo;s to the back end to eliminate the gap between it and the
-house created by the roof overhang</li>
-<li>Building a wood base with flooring</li>
-<li>Building a window insert with a cat flap for entry</li>
-</ol>
+    <p>I deal a lot with large-ish binary file in my work. Typically
+these are single-file database in the style of Sqlite3. These
+aren&rsquo;t ideal for putting in Git. Git doesn&rsquo;t scale well to
+large repository sizes. People always seem to try framing
+this as not a limitation, but it is. I&rsquo;ve taken to using
+Boar, Restic and finally the Duplicacy deduplicating backup
+software packages. I think at some point someone had mentioned
+that it would be awesome to have something like Git but
+that replaces the packfile format with deduplicating storage.
+And so I got started scratching my own itch. You can find
+it on my GitHub here: <a href="https://github.com/akbarnes/dupver">https://github.com/akbarnes/dupver</a></p>
+<p>Dupver is a minimalist deduplicating version control system in Go
+based on the Restic chunking library. It is most similar to the binary
+version control system Boar
+<a href="https://bitbucket.org/mats_ekberg/boar/wiki/Home">https://bitbucket.org/mats_ekberg/boar/wiki/Home</a>. Dupver does not
+track files, rather it stores snapshots more like a backup program.
+Rather than traverse directories itself, Dupver uses an (uncompressed)
+tar file as input. Not that only tar files are accepted as input as
+Dupver relies on the tar container to provide the list of files in the
+snapshot and store metadata such as file modification times and
+permissions Dupver uses a centralized repository to take advantage of
+deduplication between working directories. This means that dupver
+working directories can also be git repositories or subdirectories of
+git repositories. I mainly use it for version control of databases,
+but it can also be used for sampled data.</p>
 
 </div>
 
         <footer class="post-footer clearfix"><div class="share">
-            <a class="icon-twitter" href="https://twitter.com/share?text=Catio&url=%2fcatio%2f"
+            <a class="icon-twitter" href="https://twitter.com/share?text=Deduplicating%20Binary%20Version%20Control%20with%20DupVer&url=%2fdupver%2f"
                 onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" aria-label="Share on Twitter">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
             </a>

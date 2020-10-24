@@ -5,10 +5,19 @@
     <link>/</link>
     <description>Recent content on Art&#39;s Web Page</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 22 Oct 2020 08:37:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2020 07:41:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Deduplicating Binary Version Control with DupVer</title>
+      <link>/dupver/</link>
+      <pubDate>Sat, 24 Oct 2020 07:41:00 +0000</pubDate>
+      
+      <guid>/dupver/</guid>
+      <description>I deal a lot with large-ish binary file in my work. Typically these are single-file database in the style of Sqlite3. These aren&amp;rsquo;t ideal for putting in Git. Git doesn&amp;rsquo;t scale well to large repository sizes. People always seem to try framing this as not a limitation, but it is. I&amp;rsquo;ve taken to using Boar, Restic and finally the Duplicacy deduplicating backup software packages. I think at some point someone had mentioned that it would be awesome to have something like Git but that replaces the packfile format with deduplicating storage.</description>
+    </item>
     
     <item>
       <title>Distraction-Free Word Processor</title>
