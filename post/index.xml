@@ -5,10 +5,19 @@
     <link>/post/</link>
     <description>Recent content in Posts on Art&#39;s Web Page</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 24 Oct 2020 07:41:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2020 07:55:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Wood Block Classic (Dummy *Pod)</title>
+      <link>/wood-block-classic/</link>
+      <pubDate>Sat, 24 Oct 2020 07:55:00 +0000</pubDate>
+      
+      <guid>/wood-block-classic/</guid>
+      <description>If you are like me, you probably have a pretty nice device with a 40-pin docking connector. It&amp;rsquo;s easy to forget now, but people were really mad when Apple killed the 40-pin connector. This was because there was a wonderful ecosystem that sprung up of really nice audio devices that you could plug your iPod into. There were boombox-like things, clock radios and a few folks who would mod the center console on their cars to integrate a dock.</description>
+    </item>
     
     <item>
       <title>Deduplicating Binary Version Control with DupVer</title>
