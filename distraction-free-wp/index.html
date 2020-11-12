@@ -7,7 +7,7 @@
         <meta name="description" content="First Prototype After seeing ads for the FreeWrite and going so far as to buy an AlphaSmart Neo2, I decided that this a problem spaced under-served by Linux. Sure, there is the E-Ink DIY one driven by a Pi, but it&rsquo;s not really practical: https://hackaday.com/2018/10/20/e-ink-typewriter-is-refreshingly-slow/. This project is about making a Linux software solution based on more conventional hardware and making use of kiosk tools for Linux. This also lets me satisfy other itches, like adding calculator functionality via SageMath or circuit simulator functionality via Falstad.">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
-        <meta name="generator" content="Hugo 0.65.3" />
+        <meta name="generator" content="Hugo 0.78.1" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:title" content="Distraction-Free Word Processor">
@@ -164,6 +164,22 @@ which allow for decent-looking GUIs in shell scripts.</p>
 has Python bindings and seems like a nicer alternative to PyQT (pretty
 but tedious to code up) and PySimpleGUI (fast to code but hideous as
 the library tries to look like a 90s WinForms enterprise app).</p>
+<h1 id="console-menu-interface-for-linux-2020-11-12">Console Menu Interface for Linux 2020-11-12</h1>
+<p>I&rsquo;ve been working on a menu-based interface for Linux based on the
+old DOS shareware program Automenu. My first prototype was hacked
+up in Fish Shell here: <a href="https://github.com/akbarnes/pymenu/blob/master/launcher.fish">https://github.com/akbarnes/pymenu/blob/master/launcher.fish</a>
+and strayed away a bit from the Automenu style in that it includes
+basic support for directory bookmarks and directory navigation. Unlike DOS,
+Linux software tends not to have user-friendly file open dialogs
+so this seemed like a warranted feature. The downside with Fish
+is that it&rsquo;s impossible to create fullscreen menus without additional
+software such as whiptail. My next step was a more elegant solution
+in Python that was originally based on urwid but later switched to
+blessed: <a href="https://github.com/akbarnes/pymenu/blob/master/pymenu.py">https://github.com/akbarnes/pymenu/blob/master/pymenu.py</a>.
+I recently discovered <a href="https://github.com/aegirhall/console-menu">https://github.com/aegirhall/console-menu</a>
+which appears to be &ldquo;whiptail for python&rdquo; and
+<a href="https://github.com/mogproject/easy-menu">https://github.com/mogproject/easy-menu</a> which is the closest
+I&rsquo;ve seen to &ldquo;Automenu for Linux.&rdquo;</p>
 
 </div>
 
