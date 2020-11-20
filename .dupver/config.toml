@@ -1,0 +1,6 @@
+WorkDirName = "pin2-static"
+DefaultRepo = "main"
+RepoPath = "/Users/art/.dupver_repo"
+
+[Repos]
+  main = "/Users/art/.dupver_repo"
