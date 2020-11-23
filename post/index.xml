@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Art&#39;s Web Page</title>
-    <link>/post/</link>
+    <link>http://pin2.io/post/</link>
     <description>Recent content in Posts on Art&#39;s Web Page</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 22 Nov 2020 13:58:04 -0700</lastBuildDate>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://pin2.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>AlphaSmart Dana</title>
-      <link>/alphasmart-dana/</link>
+      <link>http://pin2.io/alphasmart-dana/</link>
       <pubDate>Sun, 22 Nov 2020 13:58:04 -0700</pubDate>
       
-      <guid>/alphasmart-dana/</guid>
+      <guid>http://pin2.io/alphasmart-dana/</guid>
       <description>I have an ongoing project for creating a distraction-free computing environment based on an intel NUC running Linux. It&amp;rsquo;s a fun project, but better suited for a workbench than for a study desk where I prefer something with a laptop form-factor I can move around. I&amp;rsquo;ve taken to using a vintage Alphasmart Data for studying. I&amp;rsquo;d wanted a Dana back when I was in college but it was out of my price range then.</description>
     </item>
     
     <item>
       <title>Wood Block Classic (Dummy iDevice)</title>
-      <link>/wood-block-classic/</link>
+      <link>http://pin2.io/wood-block-classic/</link>
       <pubDate>Sat, 24 Oct 2020 07:55:00 +0000</pubDate>
       
-      <guid>/wood-block-classic/</guid>
+      <guid>http://pin2.io/wood-block-classic/</guid>
       <description>If you are like me, you probably have a pretty nice device with a 40-pin docking connector. It&amp;rsquo;s easy to forget now, but people were really mad when Apple killed the 40-pin connector. This was because there was a wonderful ecosystem that sprung up of really nice audio devices that you could plug your iPod into. There were boombox-like things, clock radios and a few folks who would mod the center console on their cars to integrate a dock.</description>
     </item>
     
     <item>
       <title>Deduplicating Binary Version Control with DupVer</title>
-      <link>/dupver/</link>
+      <link>http://pin2.io/dupver/</link>
       <pubDate>Sat, 24 Oct 2020 07:41:00 +0000</pubDate>
       
-      <guid>/dupver/</guid>
+      <guid>http://pin2.io/dupver/</guid>
       <description>I deal a lot with large-ish binary file in my work. Typically these are single-file database in the style of Sqlite3. These aren&amp;rsquo;t ideal for putting in Git. Git doesn&amp;rsquo;t scale well to large repository sizes. People always seem to try framing this as not a limitation, but it is. I&amp;rsquo;ve taken to using Boar, Restic and finally the Duplicacy deduplicating backup software packages. I think at some point someone had mentioned that it would be awesome to have something like Git but that replaces the packfile format with deduplicating storage.</description>
     </item>
     
     <item>
       <title>Distraction-Free Word Processor</title>
-      <link>/distraction-free-wp/</link>
+      <link>http://pin2.io/distraction-free-wp/</link>
       <pubDate>Thu, 22 Oct 2020 08:37:00 +0000</pubDate>
       
-      <guid>/distraction-free-wp/</guid>
+      <guid>http://pin2.io/distraction-free-wp/</guid>
       <description>First Prototype After seeing ads for the FreeWrite and going so far as to buy an AlphaSmart Neo2, I decided that this a problem spaced under-served by Linux. Sure, there is the E-Ink DIY one driven by a Pi, but it&amp;rsquo;s not really practical: https://hackaday.com/2018/10/20/e-ink-typewriter-is-refreshingly-slow/. This project is about making a Linux software solution based on more conventional hardware and making use of kiosk tools for Linux. This also lets me satisfy other itches, like adding calculator functionality via SageMath or circuit simulator functionality via Falstad.</description>
     </item>
     
     <item>
       <title>Catio</title>
-      <link>/catio/</link>
+      <link>http://pin2.io/catio/</link>
       <pubDate>Wed, 21 Oct 2020 12:28:32 -0600</pubDate>
       
-      <guid>/catio/</guid>
+      <guid>http://pin2.io/catio/</guid>
       <description>I live in the western USA where coyote predation of pets is common. I decided to build a catio for my wandering cat after the following occured:
  I saw coyotes prowling outside the fence three times in the span of a few months My cat snuck out the pet door when we had left on travel one Christmas and went AWOL for two weeks. We found him in the neighors yard having lost about 5 pounds.</description>
     </item>
     
     <item>
       <title>Calculators</title>
-      <link>/calculators/</link>
+      <link>http://pin2.io/calculators/</link>
       <pubDate>Tue, 20 Oct 2020 21:49:39 -0600</pubDate>
       
-      <guid>/calculators/</guid>
+      <guid>http://pin2.io/calculators/</guid>
       <description>I&amp;rsquo;ve built up a collection of calculators over the last few years after getting a HP 35s for the FE and re-discovering calculators as a distraction free study aid. Nothing wrong with collecting stuff, we all do it at one point in our lives and calculators are compact and relatively cheap. Here&amp;rsquo;s my current stable, roughly in order of aquisition:
  HP 35s TI 36x Pro Casio 991EX ClassWiz (sold) HP Prime HP 12C Platinum 2nd gen HP 10bii+ HP 17bii TI baii plus SwissMicros DM42  HP 35s I bought this for the FE.</description>
     </item>
